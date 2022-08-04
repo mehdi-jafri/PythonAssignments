@@ -1,4 +1,7 @@
 fruits = ["Apple", "Mango","Banana","Cherry","stawberry","grapes","kiwi"]
-string = str(input("enter fruits name"))
-fruits.append(string)
+extra_fruit = str(input("enter fruits name"))
+fruits.append(extra_fruit)
 print(fruits)
+
+
+

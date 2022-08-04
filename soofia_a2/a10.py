@@ -10,3 +10,8 @@ while i < len(fruits):
     i += 1
 print(tup2)
 print(tup3)
+
+# or below code
+
+print(fruits[::2])
+print(fruits[1::2])
