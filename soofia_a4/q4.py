@@ -1,24 +1,27 @@
-def numbers(num): 
-    #num=int(input("Enter a number:")) 
-    temp=num 
-    rev=0 
-    while(num>0): 
-     dig=num%10 
-     rev=rev*10+dig 
-     num=num//10 
-    if(temp==rev): print("The number is palindrome!") 
-    else: print("Not a palindrome!") 
-    def strings(string): 
-        #string=input(("Enter a string:")) 
-        if(string==string[::-1]): 
-            print("The string is a palindrome") 
-        else: print("Not a palindrome") 
-        check=int(input("What you want to check palindrome of?\n1. Number\n2. String\n")) 
-        if check==1: 
-            num=int(input("Enter Number : ")) 
-            numbers(num) 
-        elif check==2: 
-            string=(input("Enter String : ")) 
-            strings(string) 
-        else: 
-            print("not a valid input.")
+# 4. ! Write a program check palindrome number and String
+
+def num_palin(num):
+    n = num
+    s = 0
+    while(n>0):
+        r = n%10
+        s = 10*s+r
+        n = n//10
+    if(s == num):
+        print("palindrome")
+    else:
+        print("not palindrome")
+
+def str_palin(str):
+    str2 = str[::-1]
+    if str2 == str:
+        print("palindrome string")
+    else:
+        print("not palindrome string")
+
+
+num = int(input("enter a number to check palindrome"))
+num_palin(num)
+
+str = input("enter a string to check palindrome or not")
+str_palin(str)
