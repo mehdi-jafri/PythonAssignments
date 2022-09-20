@@ -10,7 +10,8 @@ class child(Parent):
         self .value = "BMW,Alfaromeo,Bently" 
     def show ( self ): 
         print ( self .value) 
-        p1 = Parent() 
-        c1 = Child() 
-        p1.show() 
-        c1.show()
+        
+p1 = Parent() 
+c1 = child() 
+p1.show() 
+c1.show()
